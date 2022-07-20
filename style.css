@@ -144,6 +144,9 @@ h6 {
     align-items: center;
     text-align: center;
 }
+.closeOrder:hover {
+    cursor: pointer;
+}
 .hidden {
     display: none;
 }
