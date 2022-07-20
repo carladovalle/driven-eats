@@ -131,3 +131,19 @@ h6 {
 .option.select .check {
     opacity: 1;
 }
+.closeOrder {
+    background-color: #32B72F;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 700;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hidden {
+    display: none;
+}

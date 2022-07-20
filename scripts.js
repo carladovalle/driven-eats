@@ -9,6 +9,7 @@ function selectFood(nameFood) {
     }
     nameFood.classList.add("select");
     food = nameFood.innerHTML;
+    close();
 }
 
 function selectDrink(nameDrink) {
@@ -18,6 +19,7 @@ function selectDrink(nameDrink) {
         selectButtom.classList.remove("select");
     }
     nameDrink.classList.add("select");
+    close();
 }
 
 function selectDessert(nameDessert) {
@@ -27,4 +29,11 @@ function selectDessert(nameDessert) {
         selectButtom.classList.remove("select");
     }
     nameDessert.classList.add("select");
+    close();
+}
+function close() {
+    if (food !== null && drink !== null && dessert !== null) {
+        document.querySelector(".selectMenu").classList.add("hidden");
+        document.querySelector(".closeOrder").classList.remove("hidden");
+    }
 }
