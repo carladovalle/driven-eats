@@ -120,3 +120,14 @@ h6 {
     display: flex;
     flex-direction: column;
 }
+.option .check {
+    color: #32B72F;
+    width: 14.44px;
+    height: 14.44px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+.option.select .check {
+    opacity: 1;
+}
