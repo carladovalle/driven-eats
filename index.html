@@ -20,19 +20,19 @@
             <div class="menu">
                 <h3>Primeiro, seu prato</h3>
                 <div class="options">
-                    <div class="option">
+                    <div class="option" onclick="selectFood(this)">
                         <img class="food" src="/images/pizza4queijos.jpg" />
                         <h4>Pizza</h4>
                         <h5>Quatro queijos</h5>
                         <h6>R$ 44,90</h6>
                     </div>
-                    <div class="option">
+                    <div class="option" onclick="selectFood(this)">
                         <img class="food" src="/images/hamburguer.webp" />
                         <h4>Hamburguer</h4>
                         <h5>Pão, bife, batata e mussarela</h5>
                         <h6>R$ 12,90</h6>
                     </div>
-                    <div class="option">
+                    <div class="option" onclick="selectFood(this)">
                         <img class="food" src="/images/batatafrita.jpg" />
                         <h4>Batata frita</h4>
                         <h5>Batata com ketchup</h5>
@@ -42,20 +42,20 @@
             </div>
             <div class="menu">
                 <h3>Agora, sua bebida</h3>
-                <div class="options">
-                    <div class="option">
+                <div class="options drink">
+                    <div class="option" onclick="selectDrink(this)">
                         <img class="food" src="/images/agua.jpg" />
                         <h4>Agua</h4>
                         <h5>Garrafa 500ml</h5>
                         <h6>R$ 4,90</h6>
                     </div>
-                    <div class="option">
+                    <div class="option" onclick="selectDrink(this)">
                         <img class="food" src="/images/coca.jpg" />
                         <h4>Coca-cola</h4>
                         <h5>Lata 350ml</h5>
                         <h6>R$ 6,90</h6>
                     </div>
-                    <div class="option">
+                    <div class="option" onclick="selectDrink(this)">
                         <img class="food" src="/images/sucosnaturais.jpg" />
                         <h4>Suco natural</h4>
                         <h5>Copo 300ml</h5>
@@ -65,20 +65,20 @@
             </div>
             <div class="menu">
                 <h3>Por fim, sua sobremesa</h3>
-                <div class="options">
-                    <div class="option">
+                <div class="options dessert">
+                    <div class="option" onclick="selectDessert(this)">
                         <img class="food" src="/images/brigadeiro.webp" />
                         <h4>Brigadeiro</h4>
                         <h5>Unidade</h5>
                         <h6>R$ 4,90</h6>
                     </div>
-                    <div class="option">
+                    <div class="option" onclick="selectDessert(this)">
                         <img class="food" src="/images/torta-trufa-limao.jpg" />
                         <h4>Pedaço de torta de limão</h4>
                         <h5>Pedaço de 200g</h5>
                         <h6>R$ 8,90</h6>
                     </div>
-                    <div class="option">
+                    <div class="option" onclick="selectDessert(this)">
                         <img class="food" src="/images/_sorvete-de-chocolate.jpg" />
                         <h4>Sorvete de chocolate</h4>
                         <h5>Até 2 bolas</h5>
@@ -88,12 +88,13 @@
             </div>
         </div>
         <div class="bottomMenu">
-            <div class="select">
-                <div class="textSelect">
+            <div class="selectMenu">
+                <div class="textSelectMenu">
                     Selecione os 3 itens para fechar o pedido
                 </div>
             </div>
         </div>
-        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>  
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="scripts.js"></script>  
     </body>
 </html>

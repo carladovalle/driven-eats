@@ -96,7 +96,7 @@ h6 {
     bottom: 0;
     left: 0;
 }
-.select {
+.selectMenu {
     background-color: #CBCBCB;
     width: 364px;
     height: 61px;
@@ -105,9 +105,18 @@ h6 {
     justify-content: center;
     align-items: center;
 }
-.textSelect {
+.textSelectMenu {
     color: #FFFFFF;
     font-size: 20px;
     font-weight: 400;
     text-align: center;
+}
+.select {
+    border: 5px solid #32B72F;
+    width: 172px;
+    height: 216px;
+    background-color: #FFFFFF;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
 }
