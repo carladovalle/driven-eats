@@ -85,7 +85,7 @@ h6 {
     font-weight: 400;
     font-size: 16px;
 }
-.bottomMenu {
+footer {
     height: 92px;
     background-color: #FFFFFF;
     display: flex;
@@ -145,6 +145,95 @@ h6 {
     text-align: center;
 }
 .closeOrder:hover {
+    cursor: pointer;
+}
+.confirmOrder {
+    width: 414px;
+    height: 1026px;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.greenScreen {
+    width: 377px;
+    height: 353px;
+    color: #FFFFFF;
+    background-color: #50D074;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+    margin-top: 110px;
+}
+.confirm {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 21px;
+    display: flex;
+    justify-content: center;
+}
+.choices {
+    margin-top: 28px;
+    margin-left: 26px;
+    margin-right: 26px;
+}
+.choiceFood {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    margin-bottom: 13px;
+    justify-content: space-between;
+}
+.choiceDrink {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    margin-bottom: 13px;
+    justify-content: space-between;
+}
+.choiceDessert {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    margin-bottom: 13px;
+    justify-content: space-between;
+}
+.total {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+.everythingOk {
+    background-color: #FFFFFF;
+    width: 329px;
+    height: 52px;
+    border-radius: 100px;
+    color: #50D074;
+    font-size: 22px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23px;
+}
+.everythingOk:hover {
+    cursor: pointer;
+}
+.cancel {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+.cancel:hover {
     cursor: pointer;
 }
 .hidden {

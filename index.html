@@ -12,6 +12,53 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <div class="confirmOrder hidden">
+            <div class="greenScreen">
+                <div class="confirm">
+                    Confirme seu pedido
+                </div>
+                <div class="choices">
+                    <div class="choiceFood">
+                        <div class="nameChoice">
+                            Escolha
+                        </div>
+                        <div class="priceChoice">
+                            Preço
+                        </div>
+                    </div>
+                    <div class="choiceDrink">
+                        <div class="nameChoice">
+                            Escolha
+                        </div>
+                        <div class="priceChoice">
+                            Preço
+                        </div>
+                    </div>
+                    <div class="choiceDessert">
+                        <div class="nameChoice">
+                            Escolha
+                        </div>
+                        <div class="priceChoice">
+                            Preço
+                        </div>
+                    </div>
+                    <div class="total">
+                        <div class="totalText">
+                            TOTAL
+                        </div> 
+                        <div class="priceTotal">
+                            Preço
+                        </div>
+                    </div>
+                </div>
+                <div class="everythingOk" onclick="orderShipping()">
+                    Tudo certo, pode pedir!
+                </div>
+                <div class="cancel" onclick="cancelOrder()">
+                    Cancelar
+                </div>
+            </div>
+        </div>
         <header>
             <h1>DrivenEats</h1>
             <h2>Sua comida em 6 minutos</h2>
@@ -96,16 +143,16 @@
                 </div>
             </div>
         </div>
-        <div class="bottomMenu">
+        <footer>
             <div class="selectMenu">
                 <div class="textSelectMenu">
                     Selecione os 3 itens para fechar o pedido
                 </div>
             </div>
-            <div class="closeOrder hidden" onclick="orderShipping()">
+            <div class="closeOrder hidden" onclick="openConfirmation()">
                 Fechar pedido
             </div>
-        </div>
+        </footer>
         <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
         <script src="scripts.js"></script>  
     </body>

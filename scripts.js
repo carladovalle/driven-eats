@@ -1,6 +1,9 @@
 let food;
 let drink;
 let dessert;
+let eat;
+let toDrink;
+let sweet;
 
 function selectFood(nameFood) {
     const selectButtom = document.querySelector(".select");
@@ -56,4 +59,23 @@ function orderShipping() {
 
     const uriEncoded = encodeURIComponent(uri);
     window.open(`https://wa.me/553299999999?text=${uriEncoded}`, `_blank`);
+}
+
+function openConfirmation() {
+    if (food !== undefined && drink !== undefined && dessert !== undefined) {
+        const overlay = document.querySelector(".confirmOrder");
+        overlay.classList.remove("hidden");
+        let totalPrice = Number(eat.querySelector("h6").innerText.replace("R$","").replace(",",".")) + Number(toDrink.querySelector("h6").innerText.replace("R$","").replace(",",".")) + Number(sweet.querySelector("h6").innerText.replace("R$","").replace(",",".")); 
+        overlay.querySelector(".choiceFood .nameChoice").innerHTML = eat.querySelector("h4").innerText;
+        overlay.querySelector(".choiceFood .priceChoice").innerHTML = eat.querySelector("h6").innerText;
+        overlay.querySelector(".choiceDrink .nameChoice").innerHTML = toDrink.querySelector("h4").innerText;
+        overlay.querySelector(".choiceDrink .priceChoice").innerHTML = toDrink.querySelector("h6").innerText;
+        overlay.querySelector(".choiceDessert .nameChoice").innerHTML = sweet.querySelector("h4").innerText;
+        overlay.querySelector(".choiceDessert .priceChoice").innerHTML = sweet.querySelector("h6").innerText;
+        overlay.querySelector(".total .priceTotal").innerHTML = "R$ " + totalPrice.toFixed(2);
+    }
+}
+
+function cancelOrder() {
+    document.querySelector(".confirmOrder").classList.add("hidden");
 }
